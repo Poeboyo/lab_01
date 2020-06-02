@@ -26,16 +26,18 @@ dumpster2 = day%month;
 dumpster1 = dumpster1/RATE ; 
 dumpster2 = dumpster2*RATE;
 //Prints value of Month
+printf("Month:");
 printf("%i", month);
 printf("\n");
 //Prints value of Initial
+printf("Initial:");
 printf("%c", initial);
 printf("\n");
 //Prints value of Dumpster 1 
+printf("Dumpster1:");
 printf("%i", dumpster1);
 printf("\n");
 //Prints value of Dumpster 1 
-printf("%i",dumpster2);
-
-
+printf("Dumpster2:");
+printf("%f", dumpster2);
 };
