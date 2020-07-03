@@ -75,8 +75,37 @@ float bodyMass(){
 
 //User made function 3
 
+void plane(){
+  float xcord, ycord;
+  printf("\nWhich quadrant does your point lie? \nPlease enter an x coordinate\n");
+  scanf("%f", &xcord);
+  printf("Please enter a Y coordinate\n");
+  scanf("%f", &ycord);
+
+  if(xcord > 0 && ycord > 0){
+    printf("The point lies in Q2\n");
+  }else if(xcord < 0 && ycord > 0){
+  printf("The point lies in Q1\n");
+  }else if(xcord > 0 && ycord < 0){
+  printf("The point lies in Q4\n");
+  }else if(xcord < 0 && ycord < 0){
+  printf("The point lies in Q3\n");
+  }else if(xcord == 0 && ycord != 0){
+    printf("The point lies on the x axis\n");
+  }else if(xcord != 0 && ycord == 0){
+  printf("The point lies on the y axis\n");
+  }else if(xcord == 0 && ycord == 0){
+    printf("The point lies at the origin (0,0)\n");
+  };
+};
+
+//User function number 4 
+
 int main(void) {
   light();
   bodyMass();
+  plane();
+
+
 
 };
