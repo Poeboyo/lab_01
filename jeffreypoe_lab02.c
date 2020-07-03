@@ -3,6 +3,7 @@
 // 7/3/2020
 // COP2220
 #include <stdio.h>
+#include <math.h>
 
 //User made function 1
 void light(){
@@ -99,13 +100,25 @@ void plane(){
   };
 };
 
-//User function number 4 
+//User made function 4
+void molecule(){
+  int quarts;
+  float sciNote, grams;
+
+  printf("\nPlease enter an amount of water in quarts.\n");
+  scanf("%i", &quarts);
+  grams = 3 * pow(10.0, -23.0);
+  quarts = 950*quarts;
+  grams = grams*quarts;  
+  printf("3 X 10^%d\n", quarts);
+
+};
 
 int main(void) {
   light();
   bodyMass();
   plane();
-
+  molecule();
 
 
 };
